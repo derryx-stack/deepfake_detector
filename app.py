@@ -4,28 +4,30 @@ import cv2
 import numpy as np
 import time
 
-progress = st.progress(0)
-
-for i in range(100):
-    time.sleep(0.01)
-    progress.progress(i + 1)
-import time
-
 st.set_page_config(
     page_title="Deepfake Detection System",
-    page_icon="",
+    page_icon="🕵️",
     layout="centered",
     initial_sidebar_state="collapsed"
-    
 )
+
 with st.sidebar:
     st.title("Menu")
-    st.markdown("--")
+    st.markdown("---")
+
     menu_option = st.radio(
         "Navigate",
-        ["Home", "About", "Settings", "Contribution",  "How to use", "Start Fresh Analysis"]
+        [
+            "Home",
+            "About",
+            "Settings",
+            "Contribution",
+            "How to use",
+            "Start Fresh Analysis"
+        ]
     )
-    st.markdown("--")
+
+    st.markdown("---")
     st.caption("Deepfake Detector v1.0")
 st.title("AI-Powered Deepfake Detection System")
 st.write("A system for detecting manipulated images and videos using image analysis techniques.")
