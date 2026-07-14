@@ -1,3 +1,14 @@
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
 temp_video.mp4
+temp_image.jpg
+uploads/
+
+.env
+.venv/
+venv/
+
+.DS_Store
